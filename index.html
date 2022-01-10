@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+
+<div class="output">
+    <table class="output_table" id="outputTable">
+        <thead>
+        <tr>
+            <td>Name</td><td>Transmission</td><td>Engine</td><td>Color</td><td>Fuel_Type:</td><td></td>
+        </tr>
+        </thead>
+        <tbody id="outputTableBody">
+
+        </tbody>
+
+    </table>
+</div>
+    
+<div class="controls">
+    <div class="left">
+        <div class="div">
+            #Make a Vehicle
+            <p>Create a vehicle object from these presets</p>
+            <form id="newVehicleForm">
+                <p>Name <input type="text" id="name"></p><br>
+                <p>Transmission <input type="text" id="transmission"></p><br>
+                <p>Engine Capacity <input type="number" id="capacity"></p><br>
+                <p>Color <input type="text" id="color"></p><br>
+                <p>Fuel Type <input type="text" id="fuel"></p>
+                
+                <input type="button" id="newVehicle" value="Create">
+            </form>
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="div">
+            #Search Vehicle
+            <p>Enter a name</p>
+            <p>It only returns a value if the object is found</p>
+            <form id="newVehicleForm">
+                <p>Search <input type="text" id="searchText"></p><br>
+                <input type="button" id="searchVehicle" value="Search">
+            </form>
+            <div id="searchOutput"></div>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="div">
+            #Edit a Vehicle
+            <p>Click the edit button to edit</p>
+            <p>Edit then save</p>
+            <form id="newVehicleForm">
+                <p>Name <input type="text" id="editName"></p><br>
+                <p>Engine Capacity <input type="number" id="editCapacity"></p><br>
+                <p>Transmission <input type="text" id="editTransmission"></p><br>
+                <p>Color <input type="text" id="editColor"></p><br>
+                <p>Fuel Type <input type="text" id="editFuel"></p><br>
+                <input type="button" id="editVehicle" value="Save">
+            </form>
+        </div>
+    </div>
+    
+
+</div>
+<script src="crud_ui.js"></script>
+</body>
+</html>

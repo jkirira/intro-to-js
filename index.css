@@ -1,0 +1,49 @@
+body{
+    display: grid;
+    grid-template-rows: 300px 1fr;
+}
+
+.output{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table , tr, td{
+    border: 2px solid #000000;
+}
+
+table{
+    border-spacing: 1px;
+}
+
+thead{
+    background-color: lightgrey;
+}
+
+td{
+    padding: 5px;
+}
+
+.controls{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.left, .center, .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#searchOutput{
+    margin-top: 30px;
+    word-break: break-word;
+    line-height: 2;
+}
+
+form{
+    border: 2px solid #000000;
+    padding: 20px;
+    border-radius: 5px;
+}
