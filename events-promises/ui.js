@@ -80,7 +80,7 @@ letterCount.addEventListener('keypress', function() {
 //Custom Events
 const easterEgg = new CustomEvent('displayEgg', {
     detail: {
-        message: "<h2>This is a custom event.</h2><br>You've been on this page too long.<br>There's nothing to see here.<br>"
+        message: "<h2>Custom event fired.</h2><br>You've been on this page too long.<br>There's nothing to see here.<br>"
     }
 })
 
