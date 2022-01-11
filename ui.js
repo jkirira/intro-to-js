@@ -18,9 +18,9 @@ btn3.addEventListener('click', () => {
 var promise = new Promise((resolve, reject) => {
     setTimeout(() => {
         if( !rejectPromise ){
-            resolve("Resolved. Green theme. :)")
+            resolve("Promise Resolved. Green theme. :)")
         } else {
-            reject("Rejected. I guess you don't like green. ;)")
+            reject("Promise Rejected. I guess you don't like green. ;)")
         }
     }, 30000);
     
