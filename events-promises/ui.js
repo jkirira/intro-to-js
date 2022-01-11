@@ -33,7 +33,7 @@ promise.then((message) =>{
     alert(error);
 }).then(() => {
     document.getElementById('textInfo').textContent = "Too Late. You have to refresh the page to restart the counter.";
-    btn1.setAttribute('Disabled', 'true');
+    btn.setAttribute('Disabled', 'true');
     btn3.setAttribute('Disabled', 'true');
 });
 
@@ -74,19 +74,22 @@ letterCount.addEventListener('blur', () => {
 })
 letterCount.addEventListener('keypress', function() {
     keysPressed+=1
-    document.getElementById('countOutput').textContent = "Keys Pressed: " + keysPressed
+    document.getElementById('countOutput').textContent = "It Works!!! Keys Pressed: " + keysPressed
 })
 
 //Custom Events
 const easterEgg = new CustomEvent('displayEgg', {
     detail: {
-        message: "Spiderman's real name is Peter Parker"
+        message: "<h2>This is a custom event.</h2><br>You've been on this page too long.<br>There's nothing to see here.<br>"
     }
 })
 
-document.addEventListener('displayEgg', function(e){
+targetdiv = document.getElementById('customEvent');
+targetdiv.addEventListener('displayEgg', function(e){
     console.log("Custom Event")
-    console.log(e.detail.message);
+    targetdiv.innerHTML = e.detail.message;
 })
 
-//setTimeout() document.dispatchEvent(easterEgg);
+setTimeout(() => {
+    targetdiv.dispatchEvent(easterEgg);
+}, 60000);
