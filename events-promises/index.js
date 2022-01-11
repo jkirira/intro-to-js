@@ -105,7 +105,7 @@ myPromise.then(
 
 
 
-
+/*
 btn.removeEventListener('click', changeBackground);
 
 
@@ -136,12 +136,13 @@ Boolean(0)       // => false
 
 
 "" + 123          // => "123" 
-if (1) {...}      // => if (true) {...}
+if (1)            // => if (true)
 
 
 '3' == 3,           //true
 Number(3) == 3      //true.
 
 
-‘3’ === 3           //false
+'3' === 3           //false
 Number(3) === 3     //false.
+*/
