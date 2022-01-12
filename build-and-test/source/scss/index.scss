@@ -1,0 +1,107 @@
+$primary-color: #fffff0;
+$secondary-color: #000;
+$tertiary-color: #f5C6C5;
+$other-color: #f4f55f;
+
+@mixin middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    background: $secondary_color;
+}
+
+.title-bar{
+    background-color: transparent;
+}
+.menu-icon-wrapper{
+    padding: 10px;
+    background-color: $primary-color;
+}
+
+.profile-picture, .video-section h3, #bio, #appearances, #trophies h3{
+    @include middle;
+}
+
+.profile-picture img{
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.card-section img{
+    height: 100px;
+    width: 100px;
+}
+
+#myCanvas{
+    margin: auto;
+}
+
+.footer{
+    background-color: $secondary_color;
+    color: #ffffff;
+    justify-content: space-around;
+}
+
+main{
+    padding: 0 25%;
+}
+.card{
+    height: 300px;
+    width: 300px;
+}
+.appearance-table{
+    width: 100%;
+    thead {
+        border-top: 2px solid $primary-color;
+        border-bottom: 2px solid $primary-color;
+        th {
+            text-align: center;
+            padding: 10px;
+            color: $tertiary-color;
+            border: 1px solid $secondary-color;
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid $secondary-color;
+            color: $secondary-color;
+            td {
+                padding: 10px;
+                border: 1px solid $secondary-color;
+            }
+            th {
+                padding-left: 10px;
+                border: 1px solid $secondary-color;
+            }
+        }
+    }
+}
+
+section h3{
+    color: $other-color;
+    font-size: 1.5em;
+}
+
+details, summary{
+    padding: 5px;
+}
+
+details{
+    [open]{
+        color: $other-color;
+    }
+}
+
+.form-button {
+    color: $secondary-color;
+    background-color: $tertiary-color;
+    text-decoration:none;
+    padding:5px 10px;
+    margin-top:10px; 
+    border-radius:3px;
+    font-size:1em;
+}

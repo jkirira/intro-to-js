@@ -1,0 +1,97 @@
+body {
+  background: #000;
+}
+
+.title-bar {
+  background-color: transparent;
+}
+
+.menu-icon-wrapper {
+  padding: 10px;
+  background-color: #fffff0;
+}
+
+.profile-picture, .video-section h3, #bio, #appearances, #trophies h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.card-section img {
+  height: 100px;
+  width: 100px;
+}
+
+#myCanvas {
+  margin: auto;
+}
+
+.footer {
+  background-color: #000;
+  color: #ffffff;
+  justify-content: space-around;
+}
+
+main {
+  padding: 0 25%;
+}
+
+.card {
+  height: 300px;
+  width: 300px;
+}
+
+.appearance-table {
+  width: 100%;
+}
+.appearance-table thead {
+  border-top: 2px solid #fffff0;
+  border-bottom: 2px solid #fffff0;
+}
+.appearance-table thead th {
+  text-align: center;
+  padding: 10px;
+  color: #f5C6C5;
+  border: 1px solid #000;
+}
+.appearance-table tbody tr {
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+.appearance-table tbody tr td {
+  padding: 10px;
+  border: 1px solid #000;
+}
+.appearance-table tbody tr th {
+  padding-left: 10px;
+  border: 1px solid #000;
+}
+
+section h3 {
+  color: #f4f55f;
+  font-size: 1.5em;
+}
+
+details, summary {
+  padding: 5px;
+}
+
+details [open] {
+  color: #f4f55f;
+}
+
+.form-button {
+  color: #000;
+  background-color: #f5C6C5;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+  font-size: 1em;
+}
