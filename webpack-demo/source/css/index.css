@@ -1,0 +1,8 @@
+.hello{
+    background-color: #000000;
+    display: flex;
+    padding: 30px;
+    flex-shrink:initial;
+    color: white;
+    margin-top: 100px;
+}
